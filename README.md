@@ -2,6 +2,7 @@
 learned from this URL: very beginning
 https://developer.confluent.io/get-started/spring-boot/#where-next
 
+
 1. create topic:
 docker exec broker \
 kafka-topics --create \
