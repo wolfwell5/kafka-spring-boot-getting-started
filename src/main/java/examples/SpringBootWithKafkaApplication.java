@@ -44,8 +44,10 @@ public class SpringBootWithKafkaApplication {
                         MessageListenerContainer listenerContainer = kafkaListenerEndpointRegistry.getListenerContainer("myConsumer");
                         listenerContainer.start();
                         break;
-                  default:
-                        break;
+                    default:
+                        this.producer.sendMessage("key-" + arg, arg);
+//                  default:
+//                        break;
                 }
             }
         };
