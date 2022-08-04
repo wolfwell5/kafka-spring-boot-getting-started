@@ -16,13 +16,3 @@ kafka-topics --create \
 
 2. run consumer:
    gradle bootRun --args='--consumer'
-
-   
-
-二、delete topic:
-docker exec broker \
-kafka-topics --delete \
---topic purchases \
---bootstrap-server 10.205.18.248:9092
-
-
